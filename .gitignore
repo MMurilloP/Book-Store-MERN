@@ -1,0 +1,28 @@
+# Archivos generados por el sistema
+node_modules/
+npm-debug.log
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+
+# Dependencias específicas de proyectos
+package-lock.json
+yarn.lock
+
+# Directorios específicos de desarrollo
+/dist/
+/tmp/
+
+# Variables de entorno
+.env
+
+# Archivos de construcción
+build/
+
+# Logs y archivos generados
+logs/
+*.log
+
+# Dependencias locales de desarrollo
+/test/
