@@ -25,26 +25,38 @@ const Home = () => {
       });
   }, []);
 
+  const buttonStyles =
+    "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded";
+  const titleStyles = "text-7xl font-semibold my-8";
+  const addIconStyles = "text-blue-800 text-4xl";
+
   return (
     <div className="p-4">
       <div className="flex justify-center items-center gap-x-4">
         <button
-          className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg"
+          className={`${buttonStyles} ${
+            showType === "table" ? "bg-blue-700" : ""
+          }`}
           onClick={() => setShowType("table")}
         >
           Table
         </button>
         <button
-          className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg"
+          className={`${buttonStyles} ${
+            showType === "card" ? "bg-blue-700" : ""
+          }`}
           onClick={() => setShowType("card")}
         >
           Card
         </button>
       </div>
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl my-8">Books List</h1>
+        <h1 className={titleStyles}>Books List</h1>
         <Link to="/books/create">
-          <MdOutlineAddBox className="text-sky-800 text-4xl" />
+          <div className="flex flex-row gap-x-4">
+            <MdOutlineAddBox className={addIconStyles} />
+            <h3 className="text-2xl">Add a new Book</h3>
+          </div>
         </Link>
       </div>
       {loading ? (

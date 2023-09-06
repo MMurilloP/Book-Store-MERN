@@ -13,6 +13,7 @@ router.post("/", async (req, res) => {
       title: req.body.title,
       author: req.body.author,
       publishYear: req.body.publishYear,
+      imageUrl: req.body.imageUrl,
     };
     const book = await Book.create(newBook);
     return res.status(201).send(book);
