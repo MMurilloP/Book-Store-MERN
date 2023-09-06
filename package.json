@@ -5,9 +5,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "dev": "nodemon index.js"
+    "dev": "cd frontend && npm run dev",
+    "start": "node backend/index.js",
+    "client": "npm run dev",
+    "app": "concurrently npm \"npm run start\" \"npm run client\""
   },
   "keywords": [],
   "author": "",

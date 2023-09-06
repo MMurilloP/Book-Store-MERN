@@ -1,10 +1,14 @@
-import express, { response } from "express";
-import { PORT, mongoDBURL } from "./config.js";
+import express from "express";
 import mongoose from "mongoose";
 import booksRoute from "./routes/booksRoute.js";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
+
+const PORT = process.env.PORT;
+export const mongoDBURL = process.env.mongoDBURL;
 
 //Middleware for parsin request body
 app.use(express.json());
