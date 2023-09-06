@@ -1,4 +1,4 @@
-# MERN BOOK-STORE
+# MERN BOOK-STORE-APP
 
 Este es un proyecto MERN stack (MongoDB, Express, React, Node.js) que trata sobre los siguientes temas:
 

@@ -8,6 +8,7 @@ const app = express();
 
 //Middleware for parsin request body
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 

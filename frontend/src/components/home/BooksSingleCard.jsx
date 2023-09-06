@@ -19,7 +19,7 @@ const BooksSingleCard = ({ book }) => {
       <h2 className="absolute top-1 right-2 px-4 py-2 bg-red-300 rounded-lg">
         {book.publishYear}
       </h2>
-      <img src={book.imageUrl} alt="book image" className="w-20 h-30 " />
+      <img src={book.imageUrl} alt="book image" className="w-20 h-30 mb-4" />
 
       <div className="flex justify-be items-center gap-x-2">
         <PiBookOpenTextLight className="text-red-300 text-2xl" />
