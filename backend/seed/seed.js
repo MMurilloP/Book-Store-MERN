@@ -3,11 +3,13 @@
 
 // *RUN  node seed/seed.js from the same level as the server or .env variables ===undefined
 
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 // Schema must match the seed
 
-import { Book } from "../models/bookModel.js";
+// import { Book } from "../models/bookModel.js";
+const { Book } = require("../models/bookModel.js");
 
 //**PROTECT CREDS WITH THIS .ENV INSTEAD OF BRADS' DEFAULTJSON
 
