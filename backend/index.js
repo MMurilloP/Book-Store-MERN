@@ -16,11 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 
-app.get("/", (req, res) => {
-  console.log(req);
-  return res.status(234).send("Hello World");
-});
-
 app.use("/books", booksRoute);
 
 mongoose
