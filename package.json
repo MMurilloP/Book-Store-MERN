@@ -8,7 +8,7 @@
     "client": "npm run start --prefix frontend",
     "start": "node backend/index.js",
     "app": "concurrently npm \"npm run start\" \"npm run client\"",
-    "build": "cd frontend && npm install && cd .. && cd backend && npm i && cd .. && npm run app"
+    "build": "cd frontend && npm install && npm run build && cd .. && cd backend && npm i && cd .. && npm run app"
   },
   "keywords": [],
   "author": "",
