@@ -36,17 +36,13 @@ const BooksSingleCard = ({ book }) => {
           className="text-3xl text-blue-800 hover:text-black cursor-pointer"
           onClick={() => setShowModal(true)}
         />
-        <Link
-          to={`https://book-mern-cxst.onrender.com/books/details/${book._id}`}
-        >
+        <Link to={`/books/details/${book._id}`}>
           <BsInfoCircle className="text-green-800 text-2x hover:text-black" />
         </Link>
-        <Link to={`https://book-mern-cxst.onrender.com/books/edit/${book._id}`}>
+        <Link to={`/books/edit/${book._id}`}>
           <AiOutlineEdit className="text-yellow-600 text-2x hover:text-black" />
         </Link>
-        <Link
-          to={`https://book-mern-cxst.onrender.com/books/delete/${book._id}`}
-        >
+        <Link to={`/books/delete/${book._id}`}>
           <MdOutlineDelete className="text-red-600 text-2x hover:text-black" />
         </Link>
       </div>
